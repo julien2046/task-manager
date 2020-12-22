@@ -7,6 +7,10 @@ const sendWelcomeEmail = (email, name) => {
     from: 'j.banchetti@hotmail.fr',
     subject: 'Thanks',
     text: `Welcome to the app, ${name}. Let me know how you get along with the app. `
+  }).then(() => {
+    console.log('Succes')
+  }).catch((e) => {
+    console.log(e)
   })
 }
 
@@ -16,6 +20,10 @@ const sendCancelationEmail = (email, name) => {
     from: 'j.banchetti@hotmail.fr',
     subject: 'Bye bye',
     text: `Bye bye ${name}.`
+  }).then(() => {
+    console.log('Succes')
+  }).catch((e) => {
+    console.log(e)
   })
 }
 
